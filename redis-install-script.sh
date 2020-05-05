@@ -25,6 +25,7 @@ make -s install
 ####
 # Set up Redis
 ####
+rm /etc/redis/redis.conf
 rm -rf /etc/redis /var/lib/redis
 mkdir /etc/redis /var/lib/redis
 cp src/redis-server src/redis-cli /usr/local/bin
