@@ -25,6 +25,7 @@ make -s install
 ####
 # Set up Redis
 ####
+systemctl stop redis
 rm /etc/redis/redis.conf
 rm -rf /etc/redis /var/lib/redis
 mkdir /etc/redis /var/lib/redis
