@@ -16,12 +16,10 @@ yum -q -y install gcc gcc-c++ make
 ####
 # Download and install Redis:
 ####
-cd redis-stable
-make uninstall
 wget -q http://download.redis.io/releases/redis-5.0.9.tar.gz
 tar xzf redis-5.0.9.tar.gz
 rm -f	redis-5.0.9.tar.gz
-cd redis-stable
+cd redis-5.0.9
 make -s
 make -s install
 ####
