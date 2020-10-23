@@ -21,6 +21,9 @@ wget -q http://download.redis.io/releases/redis-6.0.8.tar.gz
 tar xzf redis-6.0.8.tar.gz
 rm -f	redis-6.0.8.tar.gz
 cd redis-6.0.8
+cd deps
+make hiredis jemalloc linenoise lua geohash-int
+cd ..
 make -s
 make -s install
 ####
